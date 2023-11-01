@@ -85,6 +85,8 @@ var Keyboard = function(){
     for(i = 65; i <= 90; i++){
 	this.k_chars[String.fromCharCode(i).toLowerCase()] = String.fromCharCode(i).toLowerCase();
 	this.k_chars['shift+'+String.fromCharCode(i).toLowerCase()] = String.fromCharCode(i).toUpperCase();
+	this.k_char['capslock+'+String.fromCharCode(i).toLowerCase()] = String.fromCharCode(i).toUpperCase();
+	this.k_char['capslock+shift+'+String.fromCharCode(i).toLowerCase()] = String.fromCharCode(i).toLowerCase();    
     }
 
     // numbers
